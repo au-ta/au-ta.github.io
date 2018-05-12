@@ -2,3 +2,8 @@
 ---
 
 @import "{{ site.theme }}";
+
+.page-header a#top {
+  color: inherit;
+  text-decoration: none;
+}

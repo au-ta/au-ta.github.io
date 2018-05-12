@@ -1,14 +1,12 @@
 ### About Australia Tamil Arts
 
-Vision statement and brief introduction
-
-> Quoted text
+> Vision statement and brief introduction
 
 >> Nested quote
 
-1. ordered list item
-2. ordered list item
-3. ordered list item
+1. member 1
+2. member 2
+3. member 3
 
 - bullet list item
 - bullet list item
@@ -30,3 +28,5 @@ This is a block of text
 | My lengthy row 2-1 | My lengthy row 2-2 |
 
 ![au ta resized logo](images/au-ta-logo.png){:height="200px" width="200px"}
+
+***

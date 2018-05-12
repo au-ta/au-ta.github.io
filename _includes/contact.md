@@ -30,3 +30,5 @@ This is a block of text
 | My lengthy row 2-1 | My lengthy row 2-2 |
 
 ![au ta resized logo](images/au-ta-logo.png){:height="200px" width="200px"}
+
+***
