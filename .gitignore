@@ -1,0 +1,5 @@
+Gemfile.lock
+vendors/
+.idea/
+_site/
+node_modules/
