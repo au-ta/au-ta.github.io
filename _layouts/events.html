@@ -12,39 +12,14 @@
     <a id="top">&nbsp;</a>
     <h1 class="project-name">{{ site.title | default: site.github.repository_name }}</h1>
     <h2 class="project-tagline">{{ site.description | default: site.github.project_tagline }}</h2>
-    <a href="#about" class="btn">About</a>
-    <a href="#events" class="btn">Events</a>
-    <a href="#chapters" class="btn">Chapters</a>
-    <a href="#get-started" class="btn">Get started</a>
-    <a href="#contact" class="btn">Contact</a>
+    <a href="/" class="btn">Home</a>
+    {% for chapter in page.chapters %}
+    <a href="#{{ chapter.anchor }}" class="btn">{{ chapter.name }}</a>
+    {% endfor %}
 </section>
 
 <section class="main-content">
-    <section>
-        <h2><a id="about">About</a></h2>
-        {% capture include_about %}{% include about.md %}{% endcapture %}
-        {{ include_about | markdownify }}
-    </section>
-    <section>
-        <h2><a id="events">Events</a></h2>
-        {% capture include_events %}{% include events.md %}{% endcapture %}
-        {{ include_events | markdownify }}
-    </section>
-    <section>
-        <h2><a id="chapters">Chapters</a></h2>
-        {% capture include_chapters %}{% include chapters.md %}{% endcapture %}
-        {{ include_chapters | markdownify }}
-    </section>
-    <section>
-        <h2><a id="get-started">Get started</a></h2>
-        {% capture include_get_started %}{% include get_started.md %}{% endcapture %}
-        {{ include_get_started | markdownify }}
-    </section>
-    <section>
-        <h2><a id="contact">Contact</a></h2>
-        {% capture include_contact %}{% include contact.md %}{% endcapture %}
-        {{ include_contact | markdownify }}
-    </section>
+    {{ content }}
     <footer class="site-footer">
         <span class="site-footer-credits">&copy; Australia Tamil Arts</span>
         <a href="#top">Top &uarr;</a>

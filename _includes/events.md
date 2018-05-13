@@ -1,5 +1,8 @@
 ### Upcoming events
 
+Most recent and/or upcoming events are listed here. 
+For a complete list of events across Chapters, please visit [this link](/events/)
+
 Here is an example of _italic text_. 
 
 > Quoted text
