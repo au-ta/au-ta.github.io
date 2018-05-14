@@ -1,4 +1,6 @@
 ---
+# Begin: this is metadata - edit only if you know what you are doing
+
 layout: events
 permalink: /events/
 title: "Australia Tamil Arts - Events"
@@ -11,6 +13,8 @@ chapters:
     anchor: melbourne
   - name: Sydney
     anchor: sydney
+    
+# End: metadata
 ---
 
 # Events
