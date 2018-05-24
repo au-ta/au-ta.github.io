@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#157878">
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <link rel="stylesheet" type="text/css" href="{{ '/assets/slick/slick.css' }}"/>
+    <link rel="stylesheet" type="text/css" href="{{ '/assets/slick/slick-theme.css' }}"/>
 </head>
 <body>
 <section class="page-header">
@@ -22,6 +24,16 @@
 <section class="main-content">
     <section>
         <h2><a id="about">About</a></h2>
+        {% assign about_images = site.static_files | where_exp: "item", "item.path contains '/images/home/about/'" %}
+        {% if about_images %}
+        <div class="slideshow">
+        {% for file in about_images %}
+            {% if file.extname == '.jpg' or file.extname == '.jpeg' or file.extname == '.png' %}
+            <div><img src="{{ file.path }}"/></div>
+            {% endif %}
+        {% endfor %}
+        </div>
+        {% endif %}
         {% capture include_about %}{% include about.md %}{% endcapture %}
         {{ include_about | markdownify }}
     </section>
@@ -62,5 +74,19 @@
     ga('send', 'pageview');
 </script>
 {% endif %}
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="{{ '/assets/slick/slick.min.js' }}"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('.slideshow').slick({
+            dots: true,
+            infinite: true,
+            speed: 500,
+            fade: true,
+            cssEase: 'linear'
+        });
+    });
+</script>
 </body>
 </html>
