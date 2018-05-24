@@ -36,19 +36,19 @@ Populate events conducted across various Chapters on this page.
 
 Events across Adelaide in reverse chronological order.
 
-```April 2018```
+### April 2018
 
   Something about the event held in April
   
-```Jan 2018```
+### Jan 2018
 
   Something about the event held in January
   
-```July 2017```
+### July 2017
 
   Something about the event held in July
 
-```Jan 2016```
+### Jan 2016
 
   Something about the event held in January
   
@@ -56,7 +56,7 @@ Events across Adelaide in reverse chronological order.
 
 Events across Brisbane in reverse chronological order
 
-```Jan 2018```
+### Jan 2018
 
   Something about the event held in January
 
@@ -64,15 +64,15 @@ Events across Brisbane in reverse chronological order
 
 Events across Melbourne in reverse chronological order
 
-```April 2018```
+### April 2018
 
   Something about the event held in April
 
-```Jan 2018```
+### Jan 2018
 
   Something about the event held in January
 
-```April 2017```
+### April 2017
 
   Something about the event held in April
 
@@ -80,15 +80,15 @@ Events across Melbourne in reverse chronological order
 
 Events across Sydney in reverse chronological order
 
-```April 2018```
+### April 2018
 
   Something about the event held in April
   
-```March 2018```
+### March 2018
 
   Something about the event held in March
   
-```July 2017```
+### July 2017
 
   Something about the event held in July
   
