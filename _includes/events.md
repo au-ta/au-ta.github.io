@@ -35,3 +35,4 @@ This is a block of text
 ![au ta resized logo](images/au-ta-logo.png){:height="200px" width="200px"}
 
 ***
+![stock image](images/home/events/pexels-photo-65717.jpeg)
