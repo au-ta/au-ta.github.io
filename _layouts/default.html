@@ -12,8 +12,8 @@
 <body>
 <section class="page-header">
     <a id="top">&nbsp;</a>
-    <h1 class="project-name">{{ site.title | default: site.github.repository_name }}</h1>
-    <h2 class="project-tagline">{{ site.description | default: site.github.project_tagline }}</h2>
+    <h1 class="project-name">{{ site.title }}</h1>
+    <h2 class="project-tagline">{{ site.description }}</h2>
     <a href="#about" class="btn">About</a>
     <a href="#events" class="btn">Events</a>
     <a href="#chapters" class="btn">Chapters</a>
@@ -25,25 +25,21 @@
     <section>
         <h2><a id="about">About</a></h2>
         {% assign about_images = site.static_files | where_exp: "item", "item.path contains '/images/home/about/'" %}
-        {% if about_images %}
-        <div class="slideshow">
-        {% for file in about_images %}
-            {% if file.extname == '.jpg' or file.extname == '.jpeg' or file.extname == '.png' %}
-            <div><img src="{{ file.path }}"/></div>
-            {% endif %}
-        {% endfor %}
-        </div>
-        {% endif %}
+        {% include slideshow.html image_files=about_images %}
         {% capture include_about %}{% include about.md %}{% endcapture %}
         {{ include_about | markdownify }}
     </section>
     <section>
         <h2><a id="events">Events</a></h2>
+        {% assign events_images = site.static_files | where_exp: "item", "item.path contains '/images/home/events/'" %}
+        {% include slideshow.html image_files=events_images %}
         {% capture include_events %}{% include events.md %}{% endcapture %}
         {{ include_events | markdownify }}
     </section>
     <section>
         <h2><a id="chapters">Chapters</a></h2>
+        {% assign chapters_images = site.static_files | where_exp: "item", "item.path contains '/images/home/chapters/'" %}
+        {% include slideshow.html image_files=chapters_images %}
         {% capture include_chapters %}{% include chapters.md %}{% endcapture %}
         {{ include_chapters | markdownify }}
     </section>
@@ -62,31 +58,6 @@
         <a href="#top">Top &uarr;</a>
     </footer>
 </section>
-
-{% if site.google_analytics %}
-<script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-    ga('create', '{{ site.google_analytics }}', 'auto');
-    ga('send', 'pageview');
-</script>
-{% endif %}
-<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-<script type="text/javascript" src="{{ '/assets/slick/slick.min.js' }}"></script>
-<script type="text/javascript">
-    $(document).ready(function(){
-        $('.slideshow').slick({
-            dots: true,
-            infinite: true,
-            speed: 500,
-            fade: true,
-            cssEase: 'linear'
-        });
-    });
-</script>
+{% include footer_js.html %}
 </body>
 </html>

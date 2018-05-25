@@ -1,0 +1,9 @@
+{% if include.image_files %}
+<div class="slideshow">
+    {% for file in include.image_files %}
+    {% if file.extname == '.jpg' or file.extname == '.jpeg' or file.extname == '.png' %}
+    <div><img data-lazy="{{ file.path }}"/></div>
+    {% endif %}
+    {% endfor %}
+</div>
+{% endif %}
