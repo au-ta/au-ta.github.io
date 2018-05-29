@@ -32,6 +32,8 @@ chapters:
 
 Populate events conducted across various Chapters on this page.
 
+![au ta resized logo](images/au-ta-logo.png){:height="200px" width="200px"}
+
 ## [Adelaide](#adelaide)
 
 Events across Adelaide in reverse chronological order.

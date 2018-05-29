@@ -44,8 +44,10 @@ New images can be uploaded or existing images can be deleted by visiting the `im
 
 The separate `Events` page is meant to embed images inline and please refer to the markdown editing link on how to include inline images.
 
-## To be added
+## To be addressed
 
-Support social media embedding links and simplify their embed operation
+[] Support social media embedding links and simplify their embed operation
+
+[] Bi-lingual support
 
 To get started visit the [markdown editor page with preview](https://kramdown.herokuapp.com/).
