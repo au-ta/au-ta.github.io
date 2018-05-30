@@ -20,7 +20,16 @@ events.md       | Events section
 get_started.md  | Get started section 
 contact.md      | Contact section 
 
-The separate `events` page gets its content from the root level `events.md` markdown file.
+The separate `events` page derives its content from the following markdown files with each referring their chapter specific events. 
+The root level `events.md` markdown file can be edited to prepend content to the top of the `events` page.
+
+File | Section
+-----|----------
+adelaide.md  | Adelaide specific events
+brisbane.md  | Brisbane specific events
+hobart.md    | Hobart specific events
+melbourne.md | Melbourne specific events
+sydney.md    | Sydney specific events
 
 ## Editing using markdown syntax
 
@@ -34,20 +43,28 @@ Once the Editor is happy with the set of changes, they can save the changes. It 
 
 ## Slideshow
 
-Slideshow has been enabled by on the following sections in the home page:
+Slideshow has been enabled by on the following sections in the `home` page:
 
 - About
 - Chapters
 - Events
 
-New images can be uploaded or existing images can be deleted by visiting the `images/home/` folder and choosing the appropriate sub-folder `about/` or `events/` or `chapters/`. Any changes made to these images folder should be saved and a minute or two be allowed to reflect the changes on the site. The slideshow will automatically include or exclude the affected image.
+and on the following sections in the `events` page:
 
-The separate `Events` page is meant to embed images inline and please refer to the markdown editing link on how to include inline images.
+- Adelaide
+- Brisbane
+- Hobart
+- Melbourne
+- Sydney
+
+New images can be uploaded or existing images can be deleted by visiting the `images/slideshow/` folder and choosing the appropriate sub-folder `home/` or `events/`. Any changes made to these images folder should be saved and a minute or two be allowed to reflect the changes to the site. The slideshow will automatically include or exclude the affected image.
+
+To embed images inline on any of the markdown pages, please refer to the markdown editing link on how to include inline images.
 
 ## To be addressed
 
-[] Support social media embedding links and simplify their embed operation
+[ ] Support social media embedding links and simplify their embed operation
 
-[] Bi-lingual support
+[ ] Bi-lingual support
 
-To get started visit the [markdown editor page with preview](https://kramdown.herokuapp.com/).
+To get started, visit the [markdown editor page with preview](https://kramdown.herokuapp.com/).
