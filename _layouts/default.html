@@ -24,21 +24,21 @@
 <section class="main-content">
     <section>
         <h2><a id="about">About</a></h2>
-        {% assign about_images = site.static_files | where_exp: "item", "item.path contains '/images/home/about/'" %}
+        {% assign about_images = site.static_files | where_exp: "item", "item.path contains '/images/slideshow/home/about/'" %}
         {% include slideshow.html image_files=about_images %}
         {% capture include_about %}{% include about.md %}{% endcapture %}
         {{ include_about | markdownify }}
     </section>
     <section>
         <h2><a id="events">Events</a></h2>
-        {% assign events_images = site.static_files | where_exp: "item", "item.path contains '/images/home/events/'" %}
+        {% assign events_images = site.static_files | where_exp: "item", "item.path contains '/images/slideshow/home/events/'" %}
         {% include slideshow.html image_files=events_images %}
         {% capture include_events %}{% include events.md %}{% endcapture %}
         {{ include_events | markdownify }}
     </section>
     <section>
         <h2><a id="chapters">Chapters</a></h2>
-        {% assign chapters_images = site.static_files | where_exp: "item", "item.path contains '/images/home/chapters/'" %}
+        {% assign chapters_images = site.static_files | where_exp: "item", "item.path contains '/images/slideshow/home/chapters/'" %}
         {% include slideshow.html image_files=chapters_images %}
         {% capture include_chapters %}{% include chapters.md %}{% endcapture %}
         {{ include_chapters | markdownify }}

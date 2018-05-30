@@ -23,35 +23,35 @@
 <section class="main-content">
     <section>
         <h2><a id="adelaide">Adelaide</a></h2>
-        {% assign adelaide_images = site.static_files | where_exp: "item", "item.path contains '/images/events/adelaide/'" %}
+        {% assign adelaide_images = site.static_files | where_exp: "item", "item.path contains '/images/slideshow/events/adelaide/'" %}
         {% include slideshow.html image_files=adelaide_images %}
         {% capture include_adelaide %}{% include adelaide.md %}{% endcapture %}
         {{ include_adelaide | markdownify }}
     </section>
     <section>
         <h2><a id="brisbane">Brisbane</a></h2>
-        {% assign brisbane_images = site.static_files | where_exp: "item", "item.path contains '/images/events/brisbane/'" %}
+        {% assign brisbane_images = site.static_files | where_exp: "item", "item.path contains '/images/slideshow/events/brisbane/'" %}
         {% include slideshow.html image_files=brisbane_images %}
         {% capture include_brisbane %}{% include brisbane.md %}{% endcapture %}
         {{ include_brisbane | markdownify }}
     </section>
     <section>
         <h2><a id="hobart">Hobart</a></h2>
-        {% assign hobart_images = site.static_files | where_exp: "item", "item.path contains '/images/events/hobart/'" %}
+        {% assign hobart_images = site.static_files | where_exp: "item", "item.path contains '/images/slideshow/events/hobart/'" %}
         {% include slideshow.html image_files=hobart_images %}
         {% capture include_hobart %}{% include hobart.md %}{% endcapture %}
         {{ include_hobart | markdownify }}
     </section>
     <section>
         <h2><a id="melbourne">Melbourne</a></h2>
-        {% assign melbourne_images = site.static_files | where_exp: "item", "item.path contains '/images/events/melbourne/'" %}
+        {% assign melbourne_images = site.static_files | where_exp: "item", "item.path contains '/images/slideshow/events/melbourne/'" %}
         {% include slideshow.html image_files=melbourne_images %}
         {% capture include_melbourne %}{% include melbourne.md %}{% endcapture %}
         {{ include_melbourne | markdownify }}
     </section>
     <section>
         <h2><a id="sydney">Sydney</a></h2>
-        {% assign sydney_images = site.static_files | where_exp: "item", "item.path contains '/images/events/sydney/'" %}
+        {% assign sydney_images = site.static_files | where_exp: "item", "item.path contains '/images/slideshow/events/sydney/'" %}
         {% include slideshow.html image_files=sydney_images %}
         {% capture include_sydney %}{% include sydney.md %}{% endcapture %}
         {{ include_sydney | markdownify }}
