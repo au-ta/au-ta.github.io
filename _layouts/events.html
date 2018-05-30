@@ -21,6 +21,7 @@
 </section>
 
 <section class="main-content">
+    {{ content }}
     <section>
         <h2><a id="adelaide">Adelaide</a></h2>
         {% assign adelaide_images = site.static_files | where_exp: "item", "item.path contains '/images/slideshow/events/adelaide/'" %}
