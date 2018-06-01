@@ -5,7 +5,4 @@ Events across Hobart in reverse chronological order
 
 We are conducting a workshop on the 2nd and 3rd of June at Hobart, Tasmania in association with local tamil organisation.
 
-#### h4 header
-##### h5 header
-###### h6 header
-
+![Hobart Parai workshop - June 2nd and 3rd 2018](images/events/hobart-event-june.jpeg){:height="420px" width="300px"}
